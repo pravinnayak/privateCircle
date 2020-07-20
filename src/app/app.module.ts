@@ -4,15 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import { ToolbarModule } from 'primeng/toolbar';
-import { ButtonModule } from 'primeng/button';
-import { SplitButtonModule } from 'primeng/splitbutton';
-import { MenubarModule } from 'primeng/menubar';
 import { ListTableComponent } from './list-table/list-table.component';
-import { MatIconModule } from '@angular/material/icon';
-import { TableModule } from 'primeng/table';
-import { MatButtonModule } from '@angular/material/button';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
@@ -35,15 +27,15 @@ import { DescriptionComponent } from './description/description.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ToolbarModule,
-    ButtonModule,
-    SplitButtonModule,
-    MenubarModule,
+    // ToolbarModule,
+    // ButtonModule,
+    // SplitButtonModule,
+    // MenubarModule,
     FormsModule,
-    MatIconModule,
-    TableModule,
+    // MatIconModule,
+    // TableModule,
     PerfectScrollbarModule,
-    MatButtonModule,
+    // MatButtonModule,
   ],
   providers: [
     {

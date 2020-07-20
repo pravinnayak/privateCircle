@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" routerLink="/">Private circle</a>
+  <a class="navbar-brand" routerLink="/">PrivateCircle</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -12,20 +12,26 @@
       </li> -->
       <li class="nav-item">
 
-        <a class="nav-link" routerLink="/list" [class.active]="currentUrl == '/list'"> <i class="pi pi-list">&nbsp;</i>
-          <span>Saved
-            List</span> </a>
+        <a class="nav-link" routerLink="/list" [class.active]="currentUrl == '/list'">
+          <!-- <i class="pi pi-list">&nbsp;</i> -->
+          <span class="material-icons navIcon">
+            format_list_bulleted&nbsp;
+          </span>
+          <span class="navText">SAVED LISTS</span> </a>
 
       </li>
 
-      <a class="nav-link" routerLink="/filters" [class.active]="currentUrl == '/filters'"> <i
-          class="pi pi-filter">&nbsp;</i>
-        <span>Saved filters</span> </a>
+      <a class="nav-link" routerLink="/filters" [class.active]="currentUrl == '/filters'">
+        <!-- <i class="pi pi-filter">&nbsp;</i> -->
+        <span class="material-icons-outlined navIcon">
+          filter_alt
+        </span>
+        <span class="navText">SAVED FILTERS</span> </a>
       <a class="nav-link" routerLink="/searchHistory" [class.active]="currentUrl == '/searchHistory'">
-        <span class="material-icons">
+        <span class="material-icons navIcon">
           history&nbsp;
         </span>
-        <span>Search History</span> </a>
+        <span class="navText">SEARCH HISTORY</span> </a>
 
     </ul>
     <form class="col-6">

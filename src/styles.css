@@ -1,1 +1,177 @@
 /* You can add global styles to this file, and also import other style files */
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto Condensed", sans-serif !important;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  /* font-family: Roboto, "Helvetica Neue", sans-serif; */
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.nav-link span {
+  vertical-align: top;
+}
+
+.nav-link.active {
+  background-color: #002b42 !important;
+  color: #fff !important;
+
+  border-radius: 5%;
+}
+
+body .ui-table .ui-table-thead>tr>th {
+  background-color: #fff !important;
+  color: #929292 !important;
+  border: none !important;
+  height: 50px !important;
+  border-bottom: 1px solid #929292 !important;
+}
+
+/* .my-custom-scrollbar {
+  position: relative;
+  height: 200px;
+  overflow: auto;
+} */
+.table-wrapper-scroll-y {
+  display: block;
+}
+
+.ps__thumb-y {
+  width: 10px !important;
+  height: 500px !important;
+}
+
+.ps>.ps__rail-x,
+.ps>.ps__rail-y {
+  opacity: 1;
+}
+
+.table {}
+
+#listTable .table thead tr th {
+  background-color: #fff !important;
+  color: #929292 !important;
+  font-size: 17px;
+  font-weight: 600;
+  height: 60px;
+  text-align: left;
+  vertical-align: middle;
+
+  /* border-bottom: 1px solid #929292; */
+}
+
+#listTable .table tr th,
+td {
+  border-right: none !important;
+  border-left: none !important;
+}
+
+#listTable td:first-child {
+  font-size: 14px;
+  font-weight: 400;
+  color: #929292 !important;
+}
+
+#listTable .entityNotZero {
+  font-size: 17px;
+  font-weight: 600;
+
+  /* color: #38a6e6 !important; */
+  color: black !important;
+}
+
+#listTable .entityZero {
+  font-size: 17px;
+  font-weight: 500;
+  color: #38a6e6 !important;
+  /* color: black !important; */
+}
+
+.actionLogo {
+  font-size: 18px;
+  transform: rotateZ(-45deg);
+  color: #b4b1b1;
+}
+
+.logo {
+  font-size: 18px;
+  color: #b4b1b1;
+  padding-left: 10%;
+}
+
+.tableContainer {
+  width: 80%;
+  padding-left: 1.2%;
+}
+
+.descriptionContainer {
+  width: 20%;
+}
+
+.logoImage {
+  display: inline;
+  vertical-align: top;
+  padding-left: 10%;
+  height: 18px;
+}
+
+.buttonSelected {
+  width: 50%;
+  padding: 0px 5px;
+  font-weight: 600;
+  /* height: 5px; */
+  background-color: #fff;
+  border-bottom: 3px solid #22475b;
+}
+
+.rowSelected {
+  background-color: #ebe8e8;
+}
+
+.buttonStyle {
+  color: #22475b !important;
+  font-size: 15px;
+  /* font-weight: 500; */
+}
+
+#description {
+  font-size: 15px;
+  height: auto;
+}
+
+#description .cardback {
+  width: auto;
+  height: auto;
+  background-color: #ebe8e8;
+  padding-left: 5%;
+  padding-bottom: 5%;
+}
+
+#description .link {
+  color: #0c5174;
+  font-weight: 600;
+}
+
+#description .detailDesc {
+  margin-bottom: 5%;
+}
+
+.scroll-container {
+  position: relative;
+}
+
+/* #descriptionList {
+  overflow-y: visible;
+} */

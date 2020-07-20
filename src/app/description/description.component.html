@@ -1,0 +1,13 @@
+<div id="description" class="container">
+    <div class="col-12" *ngIf="individualDetail.details==''" class="cardback">
+        No description <a routerLink="/list" class="link">+Add Description</a>
+    </div>
+    <div id="descriptionList" class="scroll-container" [perfectScrollbar]="config" *ngIf="!individualDetail.success"
+        class="col-12 pl-0 ps" style="height: 500px;">
+
+        <div class="detailDesc" *ngFor="let desc of individualDetail.description">
+            <a routerLink="/list">{{desc}}</a>
+        </div>
+
+    </div>
+</div>

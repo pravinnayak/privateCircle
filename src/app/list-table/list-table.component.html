@@ -1,0 +1,80 @@
+<!-- <div class="row">
+    <input type="text" [(ngModel)]="tempSearch">
+</div> -->
+
+<div class="row">
+
+    <div class="tableContainer">
+        <perfect-scrollbar id="listTable" style="max-height:550px;">
+            <table class="table table-bordered mb-0">
+                <thead>
+                    <tr style="position: sticky;top: 9%;">
+                        <th style="width:8%">Date</th>
+                        <th style="width:50%">List Name</th>
+                        <th style="width:12%;text-align: right;">No of Entities</th>
+                        <th style="width:15%">Actions</th>
+                        <th style="width:15%"></th>
+                        <!-- <th></th> -->
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <div></div> -->
+                    <tr id=" {{row._id}}" *ngFor="let row of getTableDetails() | filterList:searchParam"
+                        (click)="selectRow(row._id)" [ngClass]="{'rowSelected':isActiveRow(row._id)}">
+                        <td *ngIf="row.date" (click)="selectRow(row._id)"
+                            [ngClass]="{'rowSelected':isActiveRow(row._id)}">
+                            {{row.date | date:"MMM dd"}}</td>
+                        <td *ngIf="!row.date" (click)="selectRow(row._id)"
+                            [ngClass]="{'rowSelected':isActiveRow(row._id)}">
+                            <img rel="icon" src="./assets/favicon1.png" class="logoImage">
+                        </td>
+                        <td [ngClass]="{'entityZero':row.entities==0,'entityNotZero':row.entities!=0}">{{row.listName }}
+                        </td>
+                        <td style="text-align: right;">{{row.entities}}</td>
+                        <td>
+                            <span class="material-icons-outlined actionLogo">
+                                mail
+                            </span>
+                            <span *ngIf="row.entities!=0">
+
+                                <span title="Share" class="material-icons-outlined logo">
+                                    share
+                                </span>
+
+                                <img title="Edit" src="../../assets/svg/pen.svg" class="logoImage" alt="">
+                                <img title="Delete" src="../../assets/svg/trash.svg" class="logoImage" alt="">
+
+
+
+
+                            </span>
+
+                        </td>
+                        <td style="text-align: center;"><span (click)="select(row._id)"
+                                [ngClass]="{'buttonSelected':isActive(row._id)}" type="button"
+                                class="buttonStyle">Details</span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </perfect-scrollbar>
+    </div>
+
+    <div class="descriptionContainer">
+        <div *ngIf="selected;else noDescriptionSelected">
+            <app-description [id]="selected"></app-description>
+        </div>
+        <ng-template #noDescriptionSelected>
+            <h6>No list details selected</h6>
+        </ng-template>
+        <!-- <div class="card">
+            <div class="card-body" style="background-color: #929292;">
+                No description Yet, Add description
+            </div>
+        </div> -->
+
+        <!-- <router-outlet></router-outlet> -->
+    </div>
+
+</div>
